@@ -50,3 +50,30 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+/* MEDIA QUERY FOR IPHONE-X SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 20px; 
+  }
+
+  header {
+    display: block;
+    font-size: small;
+  }
+  
+  .my-name {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .nav-element,
+  .footer-element {
+    margin: 5px 15px;
+    font-weight: bold;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
