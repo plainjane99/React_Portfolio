@@ -51,8 +51,8 @@ footer {
   justify-content: space-between;
 }
 
-/* MEDIA QUERY FOR IPHONE-X SCREENS AND SMALLER */
-@media screen and (max-width: 768px) {
+/* MEDIA QUERY FOR SCREENS SMALLER THAN 720 */
+@media screen and (max-width: 720px) {
   body {
     margin: 20px; 
   }
@@ -60,6 +60,10 @@ footer {
   header {
     display: block;
     font-size: small;
+  }
+
+  nav {
+    justify-content: center;
   }
   
   .my-name {
@@ -75,5 +79,71 @@ footer {
 
   footer {
     font-size: small;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE5 SCREENS AND SMALLER */
+@media screen and (max-width: 420px) {
+  body {
+    margin: 20px; 
+  }
+
+  header {
+    display: block;
+    font-size: small;
+  }
+  
+  .my-name {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  nav {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-element,
+  .footer-element {
+    margin: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  footer {
+    font-size: small;
+  }
+}
+
+/* MEDIA QUERY FOR IPHONE5 SCREENS AND SMALLER */
+@media screen and (max-width: 300px) {
+  body {
+    margin: 20px; 
+  }
+
+  header {
+    display: block;
+    font-size: x-small;
+  }
+  
+  .my-name {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  nav {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-element,
+  .footer-element {
+    margin: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  footer {
+    font-size: x-small;
   }
 }
