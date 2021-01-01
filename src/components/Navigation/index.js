@@ -1,12 +1,29 @@
 import React from 'react';
 
 function Nav() {
+
+    const navigation = [
+        {
+            name: "About Me"
+        },
+        {
+            name: "Projects"
+        },
+        {
+            name: "Contact Me"
+        },
+        {
+            name: "Resume"
+        }
+    ]
+
     return (
         <nav>
-            <p className="nav-element">About Me</p>
-            <p className="nav-element">Projects</p>
-            <p className="nav-element">Contact Me</p>
-            <p className="nav-element">Resume</p>
+            {navigation.map((nav) => (
+                <span className="nav-element" key={nav.name}>
+                    {nav.name}
+                </span>
+            ))}
         </nav>
     )
 }
