@@ -1,13 +1,19 @@
 import './App.css';
 import Header from './components/Header';
-import Project from './components/Project';
+import About from './components/About';
+// import Project from './components/Project';
 import Footer from './components/Footer';
+// import { useState } from 'react';
 
 function App() {
+
   return (
     <>
       <Header></Header>
-      <Project></Project>
+      <main>
+        <About></About>
+        {/* <Project></Project> */}
+      </main>
       <Footer></Footer>
     </>
   );

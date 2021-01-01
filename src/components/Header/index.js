@@ -4,7 +4,7 @@ import Nav from '../Navigation';
 function Header() {
     return (
         <header>
-            <div class="my-name">Jane Hsu</div>
+            <div className="my-name">Jane Hsu</div>
             <Nav></Nav>
         </header>
     )
