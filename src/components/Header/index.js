@@ -1,11 +1,22 @@
 import React from 'react';
 import Nav from '../Navigation';
 
-function Header() {
+function Header(props) {
+
+    const {
+        navigation = [],
+        setCurrentNav,
+        currentNav
+    } = props
+
     return (
         <header>
             <div className="my-name">Jane Hsu</div>
-            <Nav></Nav>
+            <Nav
+                navigation={navigation}
+                setCurrentNav={setCurrentNav}
+                currentNav={currentNav}
+            ></Nav>
         </header>
     )
 }

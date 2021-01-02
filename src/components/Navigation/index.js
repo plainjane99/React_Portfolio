@@ -1,36 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 
-function Nav() {
+function Nav(props) {
 
+    const {
+        navigation = [],
+        setCurrentNav,
+        currentNav
+    } = props;
 
-    const [navigation] = useState([
-        {
-            name: "About Me"
-        },
-        {
-            name: "Projects"
-        },
-        {
-            name: "Contact Me"
-        },
-        {
-            name: "Resume"
-        }
-    ]);
-
-    const [currentNav, setCurrentNav] = useState(navigation[0]);
-
-    function navSelected(name) {
-        console.log(`${name} clicked`);
-    }
+    useEffect(() => {
+        document.title = currentNav.name;
+    }, [currentNav]);
 
     return (
         <nav>
-            {navigation.map((nav) => (
-                <span onClick={() => navSelected(nav.name)} className="nav-element" key={nav.name}>
-                    {nav.name}
-                </span>
-            ))}
+            <ul className="nav-wrapper">
+                {navigation.map((nav) => (
+                    <li className={`nav-li-styling ${currentNav.name === nav.name && 'navActive'}`} key={nav.name}>
+                        <span onClick={() => setCurrentNav(nav.name)}>
+                            {nav.name}
+                        </span>
+                    </li>
+                ))}
+            </ul>
         </nav>
     )
 }
