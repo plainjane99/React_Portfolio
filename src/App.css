@@ -52,31 +52,34 @@ nav {
   background-image: url("./assets/about/J-tree_Pano.JPG");
   background-size: cover;
   display: flex;
-  flex-flow: column wrap;
-  /* flex-direction: column; */
-  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
 }
 
 .about-text-wrapper {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  width: 240px;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .about-text {
-  /* width: 240px; */
+  width: 45%;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
+  white-space: pre-wrap;
 }
 
 .my-photo-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  width: 50%;
+  align-self: flex-end;
 }
 
 .my-photo {
-  width: 250px;
+  width: 225px;
   border-style: solid;
   border-width: 3px;
   border-radius: 50px;

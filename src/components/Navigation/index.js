@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Nav() {
 
-    const navigation = [
+
+    const [navigation] = useState([
         {
             name: "About Me"
         },
@@ -15,12 +16,18 @@ function Nav() {
         {
             name: "Resume"
         }
-    ]
+    ]);
+
+    const [currentNav, setCurrentNav] = useState(navigation[0]);
+
+    function navSelected(name) {
+        console.log(`${name} clicked`);
+    }
 
     return (
         <nav>
             {navigation.map((nav) => (
-                <span className="nav-element" key={nav.name}>
+                <span onClick={() => navSelected(nav.name)} className="nav-element" key={nav.name}>
                     {nav.name}
                 </span>
             ))}
