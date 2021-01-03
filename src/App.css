@@ -24,8 +24,6 @@ header {
   color: var(--head-foot-text-color);
   display: flex;
   justify-content: space-between;
-  /* position: sticky;
-  z-index: 9999; */
 }
 
 nav {
@@ -38,6 +36,14 @@ nav {
 
 .nav-li-styling {
   list-style-type: none;
+}
+
+.nav-li-styling:hover {
+  cursor: pointer;
+}
+
+.nav-active {
+  color: var(--background-color);
 }
 
 .my-name,
@@ -62,11 +68,14 @@ footer {
 
 /* header + navigation and footer section end */
 
+/* common section styling start */
+
 .content-section {
   width: 100%;
   height: 450px;
-  /* padding: 10px; */
 }
+
+/* common section styling start */
 
 /* About Me Section Start */
 
@@ -117,7 +126,6 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  /* justify-content: center; */
   background-color: rgba(135,206,235,1);
 }
 
