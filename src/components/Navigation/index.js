@@ -17,7 +17,10 @@ function Nav(props) {
             <ul className="nav-wrapper">
                 {navigation.map((nav) => (
                     <li className={`nav-li-styling ${currentNav.name === nav.name && 'navActive'}`} key={nav.name}>
-                        <span onClick={() => setCurrentNav(nav.name)}>
+                        <span onClick={() => {
+                            setCurrentNav(nav);
+                            }}
+                        >
                             {nav.name}
                         </span>
                     </li>

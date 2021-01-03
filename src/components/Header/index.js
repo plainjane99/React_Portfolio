@@ -7,7 +7,7 @@ function Header(props) {
         navigation = [],
         setCurrentNav,
         currentNav
-    } = props
+    } = props;
 
     return (
         <header>
@@ -16,6 +16,7 @@ function Header(props) {
                 navigation={navigation}
                 setCurrentNav={setCurrentNav}
                 currentNav={currentNav}
+                // props = {props}
             ></Nav>
         </header>
     )

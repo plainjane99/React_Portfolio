@@ -3,6 +3,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Project from './components/Project';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 import { useState } from 'react';
 
@@ -25,17 +26,37 @@ function App() {
 
   const [currentNav, setCurrentNav] = useState(navigation[0]);
 
+  console.log(currentNav);
+  console.log(currentNav.name);
+
+  function pageRender(navSelection) {
+    if (navSelection === 'About Me') {
+      return <About></About>;
+    }
+
+    if (navSelection === 'Projects') {
+      return <Project></Project>;
+    }
+
+    if (navSelection === 'Contact Me') {
+      return <Contact></Contact>;
+    }
+
+    if (navSelection === 'Resume') {
+      return <Resume></Resume>;
+    }
+    
+  }
+
   return (
     <>
       <Header
         navigation={navigation}
-        setCurrentNav={setCurrentNav}
         currentNav={currentNav}
+        setCurrentNav={setCurrentNav}
       ></Header>
       <main>
-        {/* <About></About> */}
-        {/* <Project></Project> */}
-        <Contact></Contact>
+          {pageRender(currentNav.name)}
       </main>
       <Footer></Footer>
     </>
