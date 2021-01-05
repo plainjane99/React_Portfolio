@@ -63,37 +63,45 @@ function ContactForm() {
         <section className="content-section contact-section">
             <div className="contact-form-wrapper">
                 <div className="under-construction">
-                    <p>The back-end for my contact form is still under construction. Please stay tuned.</p>
+                    <p>My contact form is still under construction. Please stay tuned.</p>
                 </div>
                 <form id="contact-form" onSubmit={handleSubmit}>
                     {/* name input */}
-                    <div>
+                    <div className="form-section">
                         <label htmlFor="name">Name:</label>
                         <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                     </div>
 
                     {/* email input */}
-                    <div>
+                    <div className="form-section">
                         <label htmlFor="email">Email address:</label>
                         <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                     </div>
 
                     {/* message text area */}
-                    <div>
+                    <div className="form-section">
                         <label htmlFor="message">Message:</label>
                         <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
                     </div>
 
                     {/* render this if there is an error */}
                     {errorMessage && (
-                        <div>
+                        <div className="form-section">
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
 
                     {/* add the button*/}
-                    <button type="submit">Submit</button>
+                    <div className="form-section">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
+
+                <div className="under-construction">
+                    <p>In the meantime, please contact me via email:</p>
+                    <a href="mailto:jane99hsu@gmail.com">jane99hsu@gmail.com</a>
+                </div>
+
             </div>
             <div className="contact-img-wrapper">
                 <img className="contact-image" src={contactImage} alt="Pink and fluffy Apache Plume in bloom"></img>

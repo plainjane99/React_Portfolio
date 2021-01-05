@@ -14,7 +14,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: var(--background-color);
-  margin: 50px 30px;
+  margin: 5vh 2vw;
 }
 
 /* header + navigation and footer section start */
@@ -24,6 +24,12 @@ header {
   color: var(--head-foot-text-color);
   display: flex;
   justify-content: space-between;
+}
+
+.my-name,
+.nav-li-styling,
+.footer-element {
+  font-size: 150%;
 }
 
 nav {
@@ -36,20 +42,23 @@ nav {
 
 .nav-li-styling {
   list-style-type: none;
+  opacity: 0.5;
 }
 
 .nav-li-styling:hover {
   cursor: pointer;
+  opacity: 1;
 }
 
 .nav-active {
   color: var(--background-color);
+  opacity: 1;
 }
 
 .my-name,
 .nav-li-styling,
 .footer-element {
-  margin: 5px 20px;
+  margin: .5em 2.5em;
   font-weight: bold;
 }
 
@@ -72,7 +81,8 @@ footer {
 
 .content-section {
   width: 100%;
-  height: 450px;
+  /* height: 450px; */
+  height: 80vh;
 }
 
 /* common section styling start */
@@ -81,36 +91,58 @@ footer {
 
 .about-section {
   background-image: url("./assets/about/J-tree_Pano.JPG");
-  background-size: cover;
-  display: flex;
+  /* background-size: cover; */
+  /* display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   padding: 10px;
+  background-size: auto 100%;
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .about-text-wrapper {
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
+  display: block;
+  /* display: inline-block; */
+  /* justify-content: flex-end; */
+  /* width: 50%; */
+  justify-content: center;
+  height: 25vh;
+  line-height: 25vh;
 }
 
 .about-text {
-  width: 45%;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 5px 10px;
+  border-radius: 15px;
   white-space: pre-wrap;
+  font-family: 'Quattrocento Sans', sans-serif;
+  /* font-size: 18px; */
+  font-weight: 600;
+  /* justify-content: center; */
+  text-align: center;
+  line-height: 1.5;
+  vertical-align: middle;
+  font-size: 150%;
 }
 
 .my-photo-wrapper {
   display: flex;
   justify-content: flex-start;
-  width: 50%;
-  align-self: flex-end;
+  /* width: 50%; */
+  /* align-self: flex-end; */
+  /* height: 310px; */
+  align-items: flex-end;
+  height: 52vh;
 }
 
 .my-photo {
+  margin-left: 15px;
   width: 225px;
   border-style: solid;
   border-width: 3px;
@@ -131,21 +163,47 @@ footer {
 
 .contact-form-wrapper {
   width: 50%;
-  display: block;
-  align-items: center;
-  justify-content: center;
-
+  /* display: block; */
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .under-construction {
   /* align-items: center;
   justify-content: center; */
+  text-align: center;
+  padding: 2vh;
+  font-weight: bold;
 }
 
 #contact-form {
-  width: 100%;
+  /* width: 100%; */
   /* background-color: rgba(192,192,192); */
   padding: 20px;
+  /* justify-content: center; */
+  /* font-size: 2em; */
+
+}
+
+.form-section {
+  padding: 5px;
+}
+
+label, input, textarea, button, .error-text {
+  font-size: 2em;
+  padding: 0.25em;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+textarea {
+  width: 75%;
+}
+
+button {
+  margin-left: .25em;
 }
 
 .contact-img-wrapper {
@@ -161,10 +219,55 @@ footer {
 
 /* Contact Me Section End */
 
+/* MEDIA QUERY FOR SCREENS SMALLER THAN 1440 */
+@media screen and (max-width: 1440px) {
+  .my-name,
+  .nav-li-styling,
+  .about-text,
+  .footer-element {
+    font-size: 115%;
+  }
+}
+
+/* MEDIA QUERY FOR SCREENS SMALLER THAN 1280 */
+@media screen and (max-width: 1280px) {
+  .my-name,
+  .nav-li-styling,
+  .about-text,
+  .footer-element {
+    font-size: 100%;
+  }
+}
+
+/* MEDIA QUERY FOR SCREENS SMALLER THAN 1024 */
+@media screen and (max-width: 1024px) {
+  .my-name,
+  .nav-li-styling,
+  .about-text,
+  .footer-element {
+    font-size: 100%;
+  }
+
+  .nav-li-styling,
+  .footer-element {
+    margin: .5em 1.5em;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .my-photo {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+}
+
 /* MEDIA QUERY FOR SCREENS SMALLER THAN 720 */
 @media screen and (max-width: 720px) {
   body {
-    margin: 20px; 
+    margin: 3vh 2vw;
   }
 
   header {
@@ -179,14 +282,26 @@ footer {
   .my-name {
     padding-top: 10px;
     text-align: center;
+    font-size: 100%;
   }
 
-  .nav-element,
+  .nav-li-styling,
   .footer-element {
-    margin: 5px 15px;
-    font-weight: bold;
+    font-size: 90%;
   }
 
+  .about-text {
+    font-size: 80%;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .my-photo {
+    width: 175px;
+    margin-left: 0;
+    margin-bottom: -0.6em;
+  }
+  
   footer {
     font-size: small;
   }
@@ -200,7 +315,7 @@ footer {
 /* MEDIA QUERY FOR SCREENS SMALLER THAN 420 */
 @media screen and (max-width: 420px) {
   body {
-    margin: 20px; 
+    margin: 3vh 2vw;
   }
 
   header {
@@ -225,6 +340,12 @@ footer {
     text-align: center;
   }
 
+  .my-photo {
+    width: 175px;
+    margin-left: 0;
+    margin-bottom: 0em;
+  }
+
   footer {
     font-size: small;
   }
@@ -235,10 +356,10 @@ footer {
 
 }
 
-/* MEDIA QUERY FOR SCREENS SMALLER THAN 300 */
-@media screen and (max-width: 300px) {
+/* MEDIA QUERY FOR SCREENS SMALLER THAN 360 */
+@media screen and (max-width: 360px) {
   body {
-    margin: 20px; 
+    margin: 3vh 2vw;
   }
 
   header {
@@ -254,6 +375,18 @@ footer {
   nav {
     align-items: center;
     justify-content: center;
+  }
+
+  .about-text {
+    font-size: 60%;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .my-photo {
+    width: 150px;
+    margin-left: -0.25em;
+    margin-bottom: 0em;
   }
 
   .nav-element,

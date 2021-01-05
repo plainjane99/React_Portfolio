@@ -4,7 +4,7 @@ import myPhoto from "../../assets/about/janehsu_photo.jpg";
 function About() {
 
     const aboutText =
-        "I love solving problems and the process of learning.  The climb into full stack web development to satisfy my desire to express creativity in my work.  I am inspired by the beauty of our planet and am driven by a compassion for humankind.  I hope to help others reach their goals as I reach mine. \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+        "I love the process of solving problems.\n\nMy engineering background includes structural design, manufacturing, system test, and project management in the aerospace industry.\nI continue my engineering journey through full stack web development to satisfy my desire to add artistic creativity in my work.\nI am inspired by the beauty of our planet and am driven by a compassion for humankind.\nI hope to help others reach their goals as I reach mine.";
 
     return (
         <section className="content-section about-section">
