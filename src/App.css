@@ -282,6 +282,9 @@ footer {
 
 .form-section {
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 label, input, textarea, button, .error-text {
@@ -293,16 +296,14 @@ input, textarea, button {
   border-radius: 5px;
 }
 
-textarea {
-  width: 75%;
-}
-
 .error-text {
   margin: 10px 0;
 }
 
 button {
-  margin-left: .25em;
+  /* margin-left: .25em; */
+  margin-top: 0.5em;
+  width: 30%;
 }
 
 .contact-img-wrapper {
