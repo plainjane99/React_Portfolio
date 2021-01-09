@@ -76,6 +76,11 @@ footer {
 .footer-element {
   text-decoration: none;
   color: var(--text-color);
+  opacity: 0.5;
+}
+
+.footer-element:hover {
+  opacity: 1;
 }
 
 /* header + navigation and footer section end */
@@ -273,7 +278,7 @@ footer {
   text-align: center;
   padding: 2vh;
   font-weight: bold;
-  font-size: 2em;;
+  font-size: 1.5em;;
 }
 
 #contact-form {
@@ -288,7 +293,7 @@ footer {
 }
 
 label, input, textarea, button, .error-text {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 0.25em;
 }
 
@@ -301,7 +306,6 @@ input, textarea, button {
 }
 
 button {
-  /* margin-left: .25em; */
   margin-top: 0.5em;
   width: 30%;
 }
@@ -358,6 +362,11 @@ button {
 
 .resume-img {
   max-height: 65vh;
+  transition: 0.2s;
+}
+
+.resume-img:hover {
+  transform: scale(1.5);
 }
 
 /* Resume Section End */
@@ -371,12 +380,13 @@ button {
     font-size: 115%;
   }
 
-  .under-construction {
-    font-size: 1.5em;;
-  }
-
-  label, input, textarea, button, .error-text {
-    font-size: 1.5em;
+  .under-construction,
+  label, 
+  input, 
+  textarea, 
+  button,
+  .error-text {
+    font-size: 1.25em;
   }
   
 }
@@ -390,12 +400,13 @@ button {
     font-size: 100%;
   }
 
-  .under-construction {
-    font-size: 1.25em;;
-  }
-
-  label, input, textarea, button, .error-text {
-    font-size: 1.25em;
+  .under-construction,
+  label, 
+  input, 
+  textarea, 
+  button,
+  .error-text {
+    font-size: 1em;
   }
   
 }
@@ -520,14 +531,6 @@ button {
     margin-bottom: -0.6em;
   }
 
-  .under-construction {
-    font-size: 0.75em;;
-  }
-
-  label, input, textarea, button, .error-text {
-    font-size: 0.75em;
-  }
-
   .grid-container {
     grid-gap: 1vh 1.5vw;
     grid-template-columns: repeat(1, 1fr);
@@ -584,15 +587,18 @@ button {
     padding: 0;
   }
 
+  .under-construction {
+    font-size: 0.75em;;
+  }
+
+  label, input, textarea, button, .error-text {
+    font-size: 0.75em;
+  }
+
+  .contact-img-wrapper {
+    background-position: 50% 0%;
+  }
   
-  footer {
-    font-size: small;
-  }
-
-  .footer-wrapper {
-    width: 70%;
-  }
-
   .resume-section {
     display: block;
   }
@@ -621,6 +627,15 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+
+  footer {
+    font-size: small;
+  }
+
+  .footer-wrapper {
+    width: 70%;
+  }
+  
 }
 
 /* MEDIA QUERY FOR SCREENS SMALLER THAN 420 */
