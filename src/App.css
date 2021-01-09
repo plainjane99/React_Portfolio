@@ -539,6 +539,7 @@ button {
 
   .project-item-wrapper {
     height: 20vh;
+    margin: 1.25vh 0;
   }
 
   .project-1 {
@@ -597,6 +598,7 @@ button {
 
   .contact-img-wrapper {
     background-position: 50% 0%;
+    height: 35vh;
   }
   
   .resume-section {
