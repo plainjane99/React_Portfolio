@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/plainjane99/React_Portfolio/static/css/main.55d498ab.chunk.css",
+    "main.js": "/plainjane99/React_Portfolio/static/js/main.f1196d6d.chunk.js",
+    "main.js.map": "/plainjane99/React_Portfolio/static/js/main.f1196d6d.chunk.js.map",
+    "runtime-main.js": "/plainjane99/React_Portfolio/static/js/runtime-main.6d3fe001.js",
+    "runtime-main.js.map": "/plainjane99/React_Portfolio/static/js/runtime-main.6d3fe001.js.map",
+    "static/js/2.fd778824.chunk.js": "/plainjane99/React_Portfolio/static/js/2.fd778824.chunk.js",
+    "static/js/2.fd778824.chunk.js.map": "/plainjane99/React_Portfolio/static/js/2.fd778824.chunk.js.map",
+    "static/js/3.92aa5a6d.chunk.js": "/plainjane99/React_Portfolio/static/js/3.92aa5a6d.chunk.js",
+    "static/js/3.92aa5a6d.chunk.js.map": "/plainjane99/React_Portfolio/static/js/3.92aa5a6d.chunk.js.map",
+    "index.html": "/plainjane99/React_Portfolio/index.html",
+    "static/css/main.55d498ab.chunk.css.map": "/plainjane99/React_Portfolio/static/css/main.55d498ab.chunk.css.map",
+    "static/js/2.fd778824.chunk.js.LICENSE.txt": "/plainjane99/React_Portfolio/static/js/2.fd778824.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/plainjane99/React_Portfolio/static/media/Tech_Blog_Snip.a1fc4e3a.png",
+    "static/media/janehsu_photo.ca65f771.jpg": "/plainjane99/React_Portfolio/static/media/janehsu_photo.ca65f771.jpg",
+    "static/media/resume_snip.png": "/plainjane99/React_Portfolio/static/media/resume_snip.1f4de047.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6d3fe001.js",
+    "static/js/2.fd778824.chunk.js",
+    "static/css/main.55d498ab.chunk.css",
+    "static/js/main.f1196d6d.chunk.js"
+  ]
+}
