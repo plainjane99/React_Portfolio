@@ -81,7 +81,6 @@ footer {
 
 .content-section {
   width: 100%;
-  /* height: 450px; */
   height: 80vh;
 }
 
@@ -91,25 +90,15 @@ footer {
 
 .about-section {
   background-image: url("./assets/about/J-tree_Pano.JPG");
-  /* background-size: cover; */
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end; */
   padding: 10px;
   background-size: auto 100%;
   background-position: 40% 50%;
   background-repeat: no-repeat;
-  /* display: flex;
-  justify-content: center; */
 }
 
 .about-text-wrapper {
   display: flex;
   display: block;
-  /* display: inline-block; */
-  /* justify-content: flex-end; */
-  /* width: 50%; */
   justify-content: center;
   height: 25vh;
   line-height: 25vh;
@@ -122,21 +111,16 @@ footer {
   border-radius: 15px;
   white-space: pre-wrap;
   font-family: 'Quattrocento Sans', sans-serif;
-  /* font-size: 18px; */
   font-weight: 600;
-  /* justify-content: center; */
   text-align: center;
   line-height: 1.5;
   vertical-align: middle;
-  font-size: 150%;
+  font-size: 135%;
 }
 
 .my-photo-wrapper {
   display: flex;
   justify-content: flex-start;
-  /* width: 50%; */
-  /* align-self: flex-end; */
-  /* height: 310px; */
   align-items: flex-end;
   height: 52vh;
 }
@@ -182,7 +166,7 @@ footer {
 
 .project-content {
   display: block;
-  background-color: rgba(192,192,192, 1);
+  background-color: rgba(31,78,121, 0.95);
   border-radius: 4px;
   padding: 0.25em 0.5em;
   align-items: center;
@@ -193,10 +177,9 @@ footer {
 .project-title {
   font-size: 1.5em;
   font-weight: bold;
-  /* text-align: center; */
   text-decoration: none;
   padding: 0.5em 0em;
-  color: var(--background-color);
+  color: var(--header-footer-color)
 }
 
 .project-title:hover {
@@ -207,13 +190,15 @@ footer {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
-  color: var(--background-color);
+  color: var(--header-footer-color)
+
 }
 
 .github-link {
   font-size: 2em;
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--header-footer-color)
+
 }
 
 .github-link:hover {
@@ -264,8 +249,7 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: rgba(135,206,235,1);
-  /* align-items: center; */
+  background-color: rgb(151, 149, 149);
 }
 
 .contact-section-container {
@@ -280,15 +264,10 @@ footer {
 
 .contact-form-wrapper {
   width: 100%;
-  /* display: block; */
-  /* align-items: center; */
-  /* justify-content: center; */
   padding: 2vh 1vw;
 }
 
 .under-construction {
-  /* align-items: center;
-  justify-content: center; */
   text-align: center;
   padding: 2vh;
   font-weight: bold;
@@ -296,11 +275,7 @@ footer {
 }
 
 #contact-form {
-  /* width: 100%; */
-  /* background-color: rgba(192,192,192); */
   padding: 20px;
-  /* justify-content: center; */
-  /* font-size: 2em; */
 }
 
 .form-section {
@@ -320,6 +295,10 @@ textarea {
   width: 75%;
 }
 
+.error-text {
+  margin: 10px 0;
+}
+
 button {
   margin-left: .25em;
 }
@@ -330,41 +309,52 @@ button {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 1vw;
-  /* width: 100%; */
-  /* display: flex; */
-  /* overflow: hidden; */
 }
-
-/* .contact-image {
-  background-image: url("./assets/contact/Apache_Plume.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-} */
 
 /* Contact Me Section End */
 
 /* Resume Section Start */
 
 .resume-section {
-  background-color: rgba(135,206,235,1);
+  background-color: rgb(151, 149, 149);
   padding: 2vh 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-wrapper {
-  width: 50%
+  margin: 0 4vw 0 0;
+  display: block;
 }
 
 .section {
-  display: block;
-  margin: 2vh;
-  background-color: pink;
+  margin: 4vh 0;
+  padding: 2vh 0;
 }
 
 .section-title {
   list-style-type: none;
-  font-size: 1em;
+  font-size: 2em;
   font-weight: bold;
   font-family: 'Quattrocento Sans', sans-serif;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.section-items {
+  list-style-type: none;
+  font-size: 1.5em;
+  font-family: 'Quattrocento Sans', sans-serif;
+  text-align: right;
+}
+
+.resume-wrapper {
+  justify-content: left;
+}
+
+.resume-img {
+  max-height: 65vh;
 }
 
 /* Resume Section End */
@@ -431,10 +421,6 @@ button {
   }
 
   .contact-section-container {
-    /* width: 100%;
-    height: 100%;
-    display: grid;
-    grid-row-gap: 1vh; */
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }  
@@ -474,7 +460,23 @@ button {
     grid-column: 2 / span 1;
     grid-row: 3 / span 1;
   }
+
+  .section-wrapper {
+    margin: 0 4vw 0 0;
+  }
+
+  .section-title {
+    font-size: 1.75em;
+  }
   
+  .section-items {
+    font-size: 1.25em;
+  }
+
+  .resume-img {
+    max-height: 50vh;
+  }
+      
 }
 
 /* MEDIA QUERY FOR SCREENS SMALLER THAN 720 */
@@ -588,7 +590,35 @@ button {
   .footer-wrapper {
     width: 70%;
   }
+
+  .resume-section {
+    display: block;
+  }
   
+  .section-wrapper {
+    margin: 0 2vw;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .section-items {
+    text-align: center;
+  }
+  
+  .resume-wrapper {
+    justify-content: center;
+    padding: 1vh 1vw;
+  }
+
+  .resume-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* MEDIA QUERY FOR SCREENS SMALLER THAN 420 */
@@ -675,10 +705,6 @@ button {
     text-align: center;
   }
 
-  /* #contact-form {
-    padding: 10px;
-  } */
-  
   .form-section {
     padding: 5px;
   }

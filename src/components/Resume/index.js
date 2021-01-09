@@ -6,23 +6,28 @@ function Resume() {
             <div className="section-wrapper">
                 <ul className="section">
                     <li className="section-title">Front End Proficiencies</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaSCript</li>
-                    <li>JQuery</li>
-                    <li>Bootstrap</li>
-                    <li>React</li>
-                    <li>Responsive Design</li>
+                    <li className="section-items">HTML</li>
+                    <li className="section-items">CSS</li>
+                    <li className="section-items">JavaScript</li>
+                    <li className="section-items">JQuery</li>
+                    <li className="section-items">Bootstrap</li>
+                    <li className="section-items">React</li>
+                    <li className="section-items">Responsive Design</li>
                 </ul>
                 <ul className="section">
                     <li className="section-title">Back End Proficiencies</li>
-                    <li>APIs</li>
-                    <li>Node</li>
-                    <li>Express</li>
-                    <li>MySQL</li>
-                    <li>Sequelize</li>
-                    <li>MongoDB</li>
+                    <li className="section-items">APIs</li>
+                    <li className="section-items">Node</li>
+                    <li className="section-items">Express</li>
+                    <li className="section-items">MySQL</li>
+                    <li className="section-items">Sequelize</li>
+                    <li className="section-items">MongoDB</li>
                 </ul>
+            </div>
+            <div className="resume-wrapper">
+                <a download="Jane_Hsu_Resume" href="./assets/Jane_Hsu_Web_Dev_Resume_20210107.pdf" title="Jane Hsu's Resume. Click to download.">
+                    <img className="resume-img" src={require(`../../assets/resume/resume_snip.png`).default} alt="Jane Hsu's resume"></img>
+                </a>
             </div>
 
         </section>

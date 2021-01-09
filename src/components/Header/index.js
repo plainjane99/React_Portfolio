@@ -16,7 +16,6 @@ function Header(props) {
                 navigation={navigation}
                 setCurrentNav={setCurrentNav}
                 currentNav={currentNav}
-                // props = {props}
             ></Nav>
         </header>
     )
