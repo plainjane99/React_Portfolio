@@ -26,9 +26,6 @@ function App() {
 
   const [currentNav, setCurrentNav] = useState(navigation[0]);
 
-  console.log(currentNav);
-  console.log(currentNav.name);
-
   function pageRender(navSelection) {
     if (navSelection === 'About Me') {
       return <About></About>;
