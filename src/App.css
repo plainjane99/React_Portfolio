@@ -650,6 +650,10 @@ button {
     text-align: center;
   }
 
+  .content-section {
+    height: auto;
+  }
+
   .my-photo {
     width: 175px;
     margin-left: 0;
