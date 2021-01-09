@@ -21,7 +21,6 @@ body {
 
 header {
   background-color: var(--header-footer-color);
-  color: var(--head-foot-text-color);
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +63,6 @@ nav {
 
 footer {
   background-color: var(--header-footer-color);
-  color: var(--head-foot-text-color);
   display: flex;
   justify-content: center;
 }
@@ -73,6 +71,11 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 50%;
+}
+
+.footer-element {
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 /* header + navigation and footer section end */
@@ -155,7 +158,6 @@ footer {
 .project-item-wrapper {
   background-size: cover;
   position: relative;
-  border: 3px solid var(--emphasis-color);
   display: flex;
   align-items: center;
   justify-content: center;
