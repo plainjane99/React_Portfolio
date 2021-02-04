@@ -1,9 +1,55 @@
 import React from 'react';
 
 function Project() {
+
+    const projects = [
+        {
+            className: "project-1",
+            name: "Color Theory",
+            description: "Group Project: MERN Stack Application",
+            github: "https://github.com/plainjane99/fitness-pal",
+            deploy: "https://color-theory.herokuapp.com/"
+        },
+        {
+            className: "project-2",
+            name: "Fitness Pal",
+            description: "Group Project: Full Stack Application",
+            github: "https://github.com/plainjane99/fitness-pal",
+            deploy: "https://fitness-pal-jhacms.herokuapp.com/"
+        },
+        {
+            className: "project-3",
+            name: "Tech Blog",
+            description: "Full Stack using MVC, Sequelize, MySQL",
+            github: "https://github.com/plainjane99/Tech_Blog",
+            deploy: "https://secret-temple-20724.herokuapp.com/"
+        },
+        {
+            className: "project-4",
+            name: "Photo Port",
+            description: "Learning React Module Assignment",
+            github: "https://github.com/plainjane99/photo-port",
+            deploy: "https://plainjane99.github.io/photo-port/"
+        },
+        {
+            className: "project-5",
+            name: "City Explorer",
+            description: "Group Project: Front End Application using an API",
+            github: "https://github.com/plainjane99/city-explorer",
+            deploy: "https://plainjane99.github.io/city-explorer/"
+        },
+        {
+            className: "project-6",
+            name: "Budget Tracker",
+            description: "Progressive Web Application with Offline Functionality",
+            github: "https://github.com/plainjane99/Budget_Tracker",
+            deploy: "https://shrouded-hollows-80758.herokuapp.com/"
+        }
+    ]
     return (
         <section className="content-section project-section">
             <div className="grid-container">
+
                 <div className="project-1 project-item-wrapper">
                     <div className="project-content">
                         <a href="https://fitness-pal-jhacms.herokuapp.com/" target="_blank" rel="noreferrer" className="project-title">Fitness Pal</a>
@@ -13,51 +59,7 @@ function Project() {
                         </a>
                     </div>
                 </div>
-                <div className="project-2 project-item-wrapper">
-                    <div className="project-content">
-                        <a href="https://secret-temple-20724.herokuapp.com/" target="_blank" rel="noreferrer" className="project-title">Tech Blog</a>
-                        <div className="project-description">Full Stack using MVC, Sequelize, MySQL</div>
-                        <a href="https://github.com/plainjane99/Tech_Blog" target="_blank" rel="noreferrer">
-                            <i className="fa fa-github github-link"></i>
-                        </a>
-                    </div>
-                </div>
-                <div className="project-3 project-item-wrapper">
-                    <div className="project-content">
-                        <a href="https://plainjane99.github.io/photo-port/" target="_blank" rel="noreferrer" className="project-title">Photo Port</a>
-                        <div className="project-description">Learning React Module Assignment</div>
-                        <a href="https://github.com/plainjane99/photo-port" target="_blank" rel="noreferrer">
-                            <i className="fa fa-github github-link"></i>
-                        </a>
-                    </div>
-                </div>
-                <div className="project-4 project-item-wrapper">
-                    <div className="project-content">
-                        <a href="https://plainjane99.github.io/city-explorer/" target="_blank" rel="noreferrer" className="project-title">City Explorer</a>
-                        <div className="project-description">Group Project: Front End Application using an API</div>
-                        <a href="https://github.com/plainjane99/city-explorer" target="_blank" rel="noreferrer">
-                            <i className="fa fa-github github-link"></i>
-                        </a>
-                    </div>
-                </div>
-                <div className="project-5 project-item-wrapper">
-                    <div className="project-content">
-                            <a href="https://shrouded-hollows-80758.herokuapp.com/" target="_blank" rel="noreferrer" className="project-title">Budget Tracker</a>
-                            <div className="project-description">Progressive Web Application with Offline Functionality</div>
-                            <a href="https://github.com/plainjane99/Budget_Tracker" target="_blank" rel="noreferrer">
-                                <i className="fa fa-github github-link"></i>
-                            </a>
-                    </div>
-                </div>
-                <div className="project-6 project-item-wrapper">
-                    <div className="project-content">
-                        <a href="https://plainjane99.github.io/Food-Festival/" target="_blank" rel="noreferrer" className="project-title">Food Festival</a>
-                        <div className="project-description">Creating a Progressive Web Application Module Assignment</div>
-                        <a href="https://github.com/plainjane99/Food-Festival" target="_blank" rel="noreferrer">
-                            <i className="fa fa-github github-link"></i>
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </section>
     )
