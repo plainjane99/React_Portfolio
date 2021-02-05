@@ -114,16 +114,16 @@ footer {
 
 .about-text {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   padding: 5px 10px;
   border-radius: 15px;
   white-space: pre-wrap;
   font-family: 'Quattrocento Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   text-align: center;
   line-height: 1.5;
   vertical-align: middle;
-  font-size: 135%;
+  font-size: 125%;
 }
 
 .my-photo-wrapper {
@@ -342,7 +342,7 @@ button {
 
 .section-title {
   list-style-type: none;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Quattrocento Sans', sans-serif;
   text-align: right;

@@ -7,7 +7,7 @@ function Project() {
             className: "project-1",
             name: "Color Theory",
             description: "Group Project: MERN Stack Application",
-            github: "https://github.com/plainjane99/fitness-pal",
+            github: "https://github.com/plainjane99/color-theory-1.0",
             deploy: "https://color-theory.herokuapp.com/",
         },
         {
@@ -20,14 +20,14 @@ function Project() {
         {
             className: "project-3",
             name: "Tech Blog",
-            description: "Full Stack using MVC, Sequelize, MySQL",
+            description: "Assignment: Using MVC, Sequelize, MySQL",
             github: "https://github.com/plainjane99/Tech_Blog",
             deploy: "https://secret-temple-20724.herokuapp.com/"
         },
         {
             className: "project-4",
             name: "Photo Port",
-            description: "Learning React Module Assignment",
+            description: "Assignment: Learning React",
             github: "https://github.com/plainjane99/photo-port",
             deploy: "https://plainjane99.github.io/photo-port/"
         },
@@ -41,7 +41,7 @@ function Project() {
         {
             className: "project-6",
             name: "Budget Tracker",
-            description: "Progressive Web Application with Offline Functionality",
+            description: "Assignment: PWA with Offline Functionality",
             github: "https://github.com/plainjane99/Budget_Tracker",
             deploy: "https://shrouded-hollows-80758.herokuapp.com/"
         }
