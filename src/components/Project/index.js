@@ -8,7 +8,7 @@ function Project() {
             name: "Color Theory",
             description: "Group Project: MERN Stack Application",
             github: "https://github.com/plainjane99/fitness-pal",
-            deploy: "https://color-theory.herokuapp.com/"
+            deploy: "https://color-theory.herokuapp.com/",
         },
         {
             className: "project-2",
@@ -46,20 +46,24 @@ function Project() {
             deploy: "https://shrouded-hollows-80758.herokuapp.com/"
         }
     ]
+
     return (
         <section className="content-section project-section">
             <div className="grid-container">
-
-                <div className="project-1 project-item-wrapper">
-                    <div className="project-content">
-                        <a href="https://fitness-pal-jhacms.herokuapp.com/" target="_blank" rel="noreferrer" className="project-title">Fitness Pal</a>
-                        <div className="project-description">Group Project: Full Stack Application</div>
-                        <a href="https://github.com/plainjane99/fitness-pal" target="_blank" rel="noreferrer">
-                            <i className="fa fa-github github-link"></i>
-                        </a>
+                {projects.map((project) => (
+                    <div 
+                        className={`project-item-wrapper ${project.className}`}
+                        key={project.className}
+                    >
+                        <div className="project-content">
+                            <a href={project.deploy} target="_blank" rel="noreferrer" className="project-title">{project.name}</a>
+                            <div className="project-description">{project.description}</div>
+                            <a href={project.github} target="_blank" rel="noreferrer">
+                                <i className="fa fa-github github-link"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                
+                ))}
             </div>
         </section>
     )
