@@ -26,10 +26,10 @@ function Project() {
         },
         {
             className: "project-4",
-            name: "Photo Port",
-            description: "Assignment: Learning React",
-            github: "https://github.com/plainjane99/photo-port",
-            deploy: "https://plainjane99.github.io/photo-port/"
+            name: "Just Tech News",
+            description: "Developing a Flask App",
+            github: "https://github.com/plainjane99/python-newsfeed",
+            deploy: "https://just-tech-news-python.herokuapp.com/"
         },
         {
             className: "project-5",
