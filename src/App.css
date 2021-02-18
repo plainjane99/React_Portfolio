@@ -123,7 +123,7 @@ footer {
   text-align: center;
   line-height: 1.5;
   vertical-align: middle;
-  font-size: 125%;
+  font-size: 120%;
 }
 
 .my-photo-wrapper {
@@ -278,7 +278,7 @@ footer {
   text-align: center;
   padding: 2vh;
   font-weight: bold;
-  font-size: 1.5em;;
+  font-size: 100%;
 }
 
 #contact-form {
@@ -375,9 +375,12 @@ button {
 @media screen and (max-width: 1440px) {
   .my-name,
   .nav-li-styling,
-  .about-text,
   .footer-element {
     font-size: 115%;
+  }
+
+  .about-text {
+    font-size: 110%;
   }
 
   .under-construction,
@@ -386,7 +389,7 @@ button {
   textarea, 
   button,
   .error-text {
-    font-size: 1.25em;
+    font-size: 90%;
   }
   
 }
@@ -395,9 +398,12 @@ button {
 @media screen and (max-width: 1280px) {
   .my-name,
   .nav-li-styling,
-  .about-text,
   .footer-element {
     font-size: 100%;
+  }
+
+  .about-text {
+    font-size: 110%;
   }
 
   .under-construction,
@@ -406,7 +412,7 @@ button {
   textarea, 
   button,
   .error-text {
-    font-size: 1em;
+    font-size: 0.75em;
   }
   
 }
@@ -415,7 +421,6 @@ button {
 @media screen and (max-width: 1024px) {
   .my-name,
   .nav-li-styling,
-  .about-text,
   .footer-element {
     font-size: 100%;
   }
@@ -427,6 +432,7 @@ button {
 
   .about-text {
     width: 100%;
+    font-size: 80%;
   }
 
   .my-photo {
@@ -480,15 +486,15 @@ button {
   }
 
   .section-title {
-    font-size: 1.75em;
+    font-size: 1.0em;
   }
   
   .section-items {
-    font-size: 1.25em;
+    font-size: 1.0em;
   }
 
   .resume-img {
-    max-height: 50vh;
+    max-height: 70vh;
   }
       
 }
@@ -589,7 +595,7 @@ button {
   }
 
   .under-construction {
-    font-size: 0.75em;;
+    font-size: 80%;
   }
 
   label, input, textarea, button, .error-text {
@@ -611,10 +617,16 @@ button {
 
   .section-title {
     text-align: center;
+    font-size: 1.5em;
   }
+ 
+  /* .resume-img {
+    max-height: 50vh;
+  } */
 
   .section-items {
     text-align: center;
+    font-size: 1.25em;
   }
   
   .resume-wrapper {
